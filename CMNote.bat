@@ -1,6 +1,6 @@
 @ECHO OFF && MODE 44,10 && TITLE CMNote: Write notes automatically to a text file && COLOR 1F
 
-:: ##Comfiguration 
+:: ##Configuration 
 
 :: change 0 to disable the time display
 SET DisplayTime=1
