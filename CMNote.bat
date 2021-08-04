@@ -18,10 +18,10 @@ SET /p note=Waiting for input:
 powershell -window maximized -command ""
 CLS
 IF "%DisplayTime%"=="1" (
-    ECHO [%DATE%, %TIME%]: "%note%"  && ECHO. && powershell write-host -fore Red Backed up succesfully && ECHO. && ECHO Printing notes
+    ECHO [%DATE%, %TIME%]: "%note%"  && ECHO. && powershell write-host -fore Red Backed up succesfully && ECHO. && ECHO Printing notes:
     ECHO [%DATE%, %TIME%]: "%note%" >> %NotePath% && ECHO [%DATE%, %TIME%]: "%note%" >> %BackupPath%
     ) ELSE (
-    ECHO [%DATE%]: "%note%" && ECHO. && powershell write-host -fore Red Backed up succesfully. && ECHO. && ECHO Printing notes
+    ECHO [%DATE%]: "%note%" && ECHO. && powershell write-host -fore Red Backed up succesfully. && ECHO. && ECHO Printing notes:
     ECHO [%DATE%]: "%note%" >> %NotePath% && ECHO [%DATE%]: "%note%" >> %BackupPath%
     
 )
